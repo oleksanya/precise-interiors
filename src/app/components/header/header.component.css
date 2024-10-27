@@ -1,0 +1,22 @@
+
+.nav-link {
+  @apply text-[1.2rem] text-gray-800 hover:text-accent active:font-medium transition-colors;
+}
+
+.nav-item {
+  @apply w-[8.688rem] text-center items-center flex justify-center
+}
+
+.nav-link-contact {
+  @apply text-white;
+}
+
+.nav-link-contact { 
+  @apply text-[1.2rem] flex
+}
+.mobile-nav-link {
+  @apply text-gray-800 text-xl font-normal uppercase;
+}
+.mobile-nav-item {
+  @apply text-center
+}
