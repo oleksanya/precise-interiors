@@ -12,6 +12,9 @@ module.exports = {
         accent: '#FFA500',    // Orange (accent)
         light: '#F5F5F5',     // Light grey
       },
+      boxShadow: {
+        'blue-shadow': '0 4px 10px 0 rgba(56, 111, 164, 0.4)',
+      },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(90deg, #FFA500 0%, rgba(56, 111, 164, 0.7) 60%, #FFA500 100%)',
         'multi-step-gradient': 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(52, 106, 156, 0.4) 44%, rgba(56, 111, 164, 0.9) 58%, rgba(37, 84, 123, 0.95) 70%, #133C55 81%)',
