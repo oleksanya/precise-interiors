@@ -1,60 +1,65 @@
 <header class="flex p-4 justify-between bg-light h-[5.5rem]">
   <div class="logo max-lg:basis-[50%] lg:basis-[20%] min-w-[12rem]">
-    <img src="/logo.svg" alt="Precise Interiors Logo" class="h-12">
-  </div> 
+    <img src="/logo.svg" alt="Precise Interiors Logo" class="h-12" />
+  </div>
 
   <!-- Mobile Menu Button (Hamburger) -->
-  <button 
-    aria-label="Toggle mobile menu" 
-    class="lg:hidden flex max-lg:w-12 justify-center items-center text-center text-primary" 
-    (click)="toggleMobileMenu()"
-  >
+  <button
+    aria-label="Toggle mobile menu"
+    class="lg:hidden flex max-lg:w-12 justify-center items-center text-center text-primary"
+    (click)="toggleMobileMenu()">
     <mat-icon class="font-semibold text-3xl min-h-12 min-w-12 text-center">
       {{ isMobileMenuOpen ? 'close' : 'menu' }}
     </mat-icon>
-  </button> 
+  </button>
 
   <!-- Desktop Navigation -->
-  <nav 
-    aria-label="Primary navigation" 
-    class="hidden lg:flex items-center h-full basis-[60%] justify-center"
-  >
-    <ul class="flex justify-between  h-full items-center">
+  <nav
+    aria-label="Primary navigation"
+    class="hidden lg:flex items-center h-full basis-[60%] justify-center">
+    <ul class="flex justify-between h-full items-center">
       <li class="nav-item">
-        <a aria-label="Home section" href="#" class="nav-link ">Home</a>
+        <a aria-label="Home section" href="#" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a aria-label="Who we are section" href="#" class="nav-link">Who we are</a>
+        <a aria-label="Who we are section" href="#" class="nav-link"
+          >Who we are</a
+        >
       </li>
-      <li class="nav-item"> 
+      <li class="nav-item">
         <a aria-label="Projects section" href="#" class="nav-link">Projects</a>
       </li>
     </ul>
   </nav>
-  
+
   <nav class="hidden lg:flex">
     <ul class="flex basis-[20%] [&>*]:m-3">
-      <li class="nav-item"> 
-        <a aria-label="Join the team page" href="#" class="nav-link">Join the team</a>
-      </li>
-      <li class="nav-item"> 
-        <a 
-          aria-label="Contact us form" 
-          href="#" 
-          class="nav-link-contact bg-secondary hover:bg-accent rounded-lg px-4 py-2 whitespace-nowrap flexitems-center"
+      <li class="nav-item">
+        <a aria-label="Join the team page" href="#" class="nav-link"
+          >Join the team</a
         >
+      </li>
+      <li class="nav-item">
+        <a
+          aria-label="Contact us form"
+          href="#"
+          class="nav-link-contact bg-secondary hover:bg-accent rounded-lg px-4 py-2 whitespace-nowrap flexitems-center">
           Contact us
         </a>
       </li>
     </ul>
   </nav>
 
-  @if(isMobileMenuOpen) { 
-    <nav class="fixed bottom-0 top-[5.6rem] left-0 w-full max-w-[30rem] bg-light p-8 z-20 shadow-lg lg:hidden">
-      <button aria-label="Close Mobile Menu" class="text-gray-800 text-xl mb-4" (click)="closeMobileMenu()">
+  @if (isMobileMenuOpen) {
+    <nav
+      class="fixed bottom-0 top-[5.6rem] left-0 w-full max-w-[30rem] bg-light p-8 z-20 shadow-lg lg:hidden">
+      <button
+        aria-label="Close Mobile Menu"
+        class="text-gray-800 text-xl mb-4"
+        (click)="closeMobileMenu()">
         <i class="fas fa-times"></i>
       </button>
-      <ul class="space-y-4 h-[25.625rem] flex flex-col justify-between ">
+      <ul class="space-y-4 h-[25.625rem] flex flex-col justify-between">
         <li class="mobile-nav-item">
           <a aria-label="Home section mobile" href="#" class="mobile-nav-link">
             Home
@@ -62,25 +67,37 @@
         </li>
 
         <li class="mobile-nav-item">
-          <a aria-label="Who we are section mobile" href="#" class="mobile-nav-link">
+          <a
+            aria-label="Who we are section mobile"
+            href="#"
+            class="mobile-nav-link">
             Who we are
           </a>
         </li>
 
         <li class="mobile-nav-item">
-          <a aria-label="Projects section mobile" href="#" class="mobile-nav-link">
+          <a
+            aria-label="Projects section mobile"
+            href="#"
+            class="mobile-nav-link">
             Projects
           </a>
         </li>
 
         <li class="mobile-nav-item">
-          <a aria-label="Join the team section mobile" href="#" class="mobile-nav-link">
+          <a
+            aria-label="Join the team section mobile"
+            href="#"
+            class="mobile-nav-link">
             Join the team
           </a>
         </li>
 
         <li class="mobile-nav-item">
-          <a aria-label="Contact us section mobile" href="#" class="mobile-nav-link">
+          <a
+            aria-label="Contact us section mobile"
+            href="#"
+            class="mobile-nav-link">
             Contact us
           </a>
         </li>
