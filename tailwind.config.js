@@ -16,12 +16,13 @@ module.exports = {
         'blue-shadow': '0 4px 10px 0 rgba(56, 111, 164, 0.4)',
       },
       backgroundImage: {
+        'home-background': "url('/ceiling.png')",
         'custom-gradient': 'linear-gradient(90deg, #FFA500 0%, rgba(56, 111, 164, 0.7) 60%, #FFA500 100%)',
         'multi-step-gradient': 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(52, 106, 156, 0.4) 44%, rgba(56, 111, 164, 0.9) 58%, rgba(37, 84, 123, 0.95) 70%, #133C55 81%)',
         'faded-dark-blue': 'linear-gradient(90deg, rgba(19, 60, 85, 0.1) 0%, #FFFFFF 100%)',
-        'soft-gradient': 'linear-gradient(90deg, rgba(245, 245, 245, 0.05) 0%, rgba(255, 255, 255, 0.2) 22%, rgba(245, 245, 245, 0.7) 43%, rgba(245, 245, 245, 0.8) 80%, rgba(245, 245, 245, 1) 95%)',
+        'soft-gradient': 'linear-gradient(0deg, rgba(245, 245, 245, 0.05) 0%, rgba(255, 255, 255, 0.2) 22%, rgba(245, 245, 245, 0.7) 43%, rgba(245, 245, 245, 0.8) 80%, rgba(245, 245, 245, 1) 95%)',
         'faded-blue': 'linear-gradient(90deg, rgba(19, 60, 85, 0.4), rgba(19, 60, 85, 0))',
-        
+      
       },
     },
   },

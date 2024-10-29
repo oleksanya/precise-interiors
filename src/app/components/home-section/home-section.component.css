@@ -1,0 +1,80 @@
+.achievments-container {
+  @apply flex w-10/12 max-sm:w-11/12 md:w-9/12 lg:w-[30.813rem] justify-between pr-5 pl-5;
+}
+.achievments-text {
+  @apply flex flex-col flex-grow min-w-[5rem]  md:max-w-[8.2rem] max-sm:text-xl text-primary leading-5 max-sm:leading-4 text-2xl text-center;
+}
+.achievments-text-accent {
+  @apply text-accent font-extrabold text-4xl block text-center max-sm:text-3xl;
+}
+
+.shimmer-text {
+  color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    125deg,
+    #133c55,
+    #133c55 50%,
+    #ffffffc1 75%,
+    #133c55
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 2s forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-delay {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-scale {
+  animation: fadeInScale 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 2.5s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
