@@ -1,0 +1,50 @@
+<section
+  class="h-[calc(100vh-8rem) lg:bg-who-we-are-background bg-no-repeat bg-right bg-[length:85rem_65rem]">
+  <div
+    class="overlay-gradient pt-8 pb-8 max-sm:pt-0 sm:pt-0 md:pt-0 max-lg:bg-primary max-sm:bg-primary lg:bg-multi-step-gradient h-full lg:pt-7">
+    <h2
+      [class.animate]="isH2Visible"
+      (visible)="onH2VisibilityChange($event)"
+      appIntersectionObserver
+      class="fade-in-left font-extrabold text-light bg-secondary text-2xl lg:text-6xl w-full lg:w-1/2 h-16 lg:h-24 flex items-center justify-center">
+      WHO WE ARE
+    </h2>
+
+    <div
+      class="lg:hidden flex justify-center h-2/5 min-h-80 max-sm:w-full max-sm:h-2/5 md:w-4/5 bg-[url('/section-2-mobile.jpg')] bg-cover bg-center mr-auto ml-auto">
+    </div>
+
+    <div
+      appIntersectionObserver
+      [class.animate]="isDivVisible"
+      (visible)="onDivVisibilityChange($event)"
+      class="fade-in p-2 pb-5 text-light w-full lg:ml-20 lg:w-1/2 lg:mt-10 text-justify leading-5 flex flex-col h-2/5 lg:h-5/6 lg:justify-center items-center"
+    >
+      <h3 class="font-extrabold text-xl text-center lg:w-4/5 lg:text-left lg:text-3xl mb-2 mt-2 lg:mb-5">
+        PRECISE INTERIORS
+      </h3>
+
+      <div class="font-semibold text-sm md:text-base lg:text-lg w-4/5">
+        <p>
+          Precise Interiors LLC Ltd is construction company driven by decades of
+          hands-on experience in the industry.
+        </p>
+        <br />
+        <p>
+          We specialize in delivering tailored solutions for both commercial and
+          residential projects. From internal partitions to external cladding,
+          and from steel framing systems to suspended ceilings, we are dedicated
+          to producing exceptional results with every build.
+        </p>
+        <br />
+        <p>
+          Our approach is built on a commitment to craftsmanship, meticulous
+          attention to detail, and a personal connection to each project.
+          Whether it's a new build or retrofitting an existing space, we ensure
+          that every aspect is carefully managed and flawlessly executed to meet
+          the highest standards of quality and client satisfaction.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
