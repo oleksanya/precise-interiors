@@ -12,7 +12,10 @@
       <ul
         class="hidden lg:grid expertise-list items-center text-primary h-full max-h-[40rem] w-5/6 max-w-max grid-cols-2 grid-rows-4 gap-5 gap-x-40">
         @for (item of expertiseItems; track item.title) {
-          <li class="list-item">
+          <li class="fade-in list-item"
+              [class.animate]="isDivVisible"
+              (visible)="onDivVisibilityChange($event)"
+              appIntersectionObserver>
             <img class="icon" [src]="item.iconSrc" [alt]="item.iconAlt" />
             <div>
               <h4>{{ item.title }}</h4>
