@@ -1,0 +1,90 @@
+<section class="bg-light h-screen min-h-[56rem] max-h-[61.25rem]">
+  <div class="bg-mobile-dark-blue lg:bg-our-expertise-linear lg:pt-7 h-full">
+    <h2
+      [class.animate]="isH2Visible"
+      (visible)="onHeadingVisibilityChange($event)"
+      appIntersectionObserver
+      class="fade-in-left font-extrabold text-light bg-accent lg:bg-primary text-2xl lg:text-6xl w-full lg:w-2/3 lg:max-w-[50rem] h-16 lg:h-24 flex items-center justify-center">
+      OUR EXPERTISE
+    </h2>
+
+    <div class="h-5/6 w-full flex justify-center items-center p-5">
+      <ul
+        class="hidden lg:grid expertise-list items-center text-primary h-full max-h-[40rem] w-5/6 max-w-max grid-cols-2 grid-rows-4 gap-5 gap-x-40">
+        @for (item of expertiseItems; track item.title) {
+          <li class="fade-in list-item"
+              [class.animate]="isDivVisible"
+              (visible)="onDivVisibilityChange($event)"
+              appIntersectionObserver>
+            <img class="icon" [src]="item.iconSrc" [alt]="item.iconAlt" />
+            <div>
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.description }}</p>
+            </div>
+          </li>
+        }
+
+        <li class="list-item">
+          <button
+            class="bg-secondary py-4 px-4 font-bold w-full text-light text-xl flex justify-center items-center"
+            aria-label="See our working process button"
+            type="button">
+            See our working process
+            <span class="ml-2 w-8 h-8"
+              ><mat-icon
+                class="flex justify-center items-center text-3xl min-w-full min-h-full text-center"
+                >arrow_right_alt</mat-icon
+              >
+            </span>
+          </button>
+        </li>
+      </ul>
+
+      <swiper-container
+        slides-per-view="1"
+        grid-rows="4"
+        grid-cols="1"
+        pagination-clickable="true"
+        class="w-full lg:hidden md:w-3/4 h-full mt-4"
+        #swiperContainer>
+        @for (item of expertiseItems; track item.title) {
+          <swiper-slide class="flex items-center text-justify max-h-[9.375rem]">
+            <ng-content>
+              <div
+                class="flex items-center fade-in"
+                [class.animate]="isDivVisible"
+                (visible)="onDivVisibilityChange($event)"
+                appIntersectionObserver>
+                <img
+                  [src]="item.iconSrc"
+                  [alt]="item.title + ' icon'"
+                  class="icon w-5 h-5" />
+
+                <div>
+                  <h4 class="font-bold max-sm:text-sm text-primary">
+                    {{ item.title }}
+                  </h4>
+                  <p class="max-sm:text-sm text-primary">
+                    {{ item.description }}
+                  </p>
+                </div>
+              </div>
+            </ng-content>
+          </swiper-slide>
+        }
+      </swiper-container>
+    </div>
+
+    <button
+      class="lg:hidden bg-secondary py-4 px-4 font-bold w-full text-light text-xl flex justify-center items-center"
+      aria-label="See our working process button"
+      type="button">
+      See our working process
+      <span class="ml-2 w-8 h-8"
+        ><mat-icon
+          class="flex justify-center items-center text-3xl min-w-full min-h-full text-center"
+          >arrow_right_alt</mat-icon>
+      </span>
+    </button>
+  </div>
+</section>
