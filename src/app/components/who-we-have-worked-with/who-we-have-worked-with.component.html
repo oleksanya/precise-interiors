@@ -1,0 +1,13 @@
+<div class="h-[40vh] bg-primary">
+  <div class="overlay-gradient bg-custom-gradient h-full">
+    <h2 class="font-extrabold text-light text-2xl lg:text-6xl text-center py-8">
+      WHO WE'VE WORKED WITH
+    </h2>
+
+    <div class="logos flex h-1/2 justify-around items-center">
+      @for (logo of logos; track logo.imgSrc) {
+        <img [src]="logo.imgSrc" class="h-1/2" alt="logo" />
+      }
+    </div>
+  </div>
+</div>
