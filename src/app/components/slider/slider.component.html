@@ -1,0 +1,43 @@
+<div class="bg-primary h-[40vh] lg:p-7 py-4">
+  @if (combinedSlides.length > 0) {
+    <swiper-container
+      navigation="true"
+      class="block lg:hidden h-full"
+      slides-per-view="1"
+      space-between="15"
+      speed="1500"
+      autoplay-delay="1500">
+      @for (slide of combinedSlides; track slide.imgSrc) {
+        <swiper-slide class="slider" [class]="slide.size">
+          <ng-content>
+            <img
+              class="image"
+              [class]="slide.size"
+              [src]="slide.imgSrc"
+              alt="Slide Imageeee" />
+          </ng-content>
+        </swiper-slide>
+      }
+    </swiper-container>
+
+    <swiper-container
+      navigation="true"
+      class="hidden lg:block h-full lg:h-full lg:w-full"
+      slides-per-view="5"
+      space-between="15"
+      speed="1500"
+      autoplay-delay="1500">
+      @for (slide of combinedSlides; track slide.imgSrc) {
+        <swiper-slide class="slider" [class]="slide.size">
+          <ng-content>
+            <img
+              class="image"
+              [class]="slide.size"
+              [src]="slide.imgSrc"
+              alt="Slide Image" />
+          </ng-content>
+        </swiper-slide>
+      }
+    </swiper-container>
+  }
+</div>

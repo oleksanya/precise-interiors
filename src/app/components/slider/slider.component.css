@@ -1,0 +1,20 @@
+:host {
+  --swiper-navigation-color: white;
+  --swiper-theme-color: white;
+}
+
+.slider.landscape {
+  @apply flex justify-center basis-full lg:basis-3/12;
+}
+
+.image.landscape {
+  @apply lg:h-full lg:w-full object-cover max-sm:object-contain object-center overflow-hidden;
+}
+
+.slider.portrait {
+  @apply flex justify-center basis-full lg:basis-2/12;
+}
+
+.image.portrait {
+  @apply lg:h-full lg:w-full object-cover lg:object-cover lg:object-center overflow-hidden;
+}
