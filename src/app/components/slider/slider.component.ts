@@ -30,7 +30,6 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
     this.combineAndShuffleSlides();
-    console.log('Slides after timeout:', this.combinedSlides);
   }
 
   combineAndShuffleSlides() {
