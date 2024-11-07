@@ -5,11 +5,20 @@ import { OurExpertiseComponent } from "../../components/our-expertise/our-expert
 import { SliderComponent } from "../../components/slider/slider.component";
 import { WhoWeHaveWorkedWithComponent } from "../../components/who-we-have-worked-with/who-we-have-worked-with.component";
 import { FeaturedProjectsComponent } from "../../components/featured-projects/featured-projects.component";
+import { OurLocationComponent } from "../../components/our-location/our-location.component";
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [HomeSectionComponent, WhoWeAreSectionComponent, OurExpertiseComponent, SliderComponent, WhoWeHaveWorkedWithComponent, FeaturedProjectsComponent],
+  imports: [
+    HomeSectionComponent,
+    WhoWeAreSectionComponent,
+    OurExpertiseComponent,
+    SliderComponent,
+    WhoWeHaveWorkedWithComponent,
+    FeaturedProjectsComponent,
+    OurLocationComponent
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
