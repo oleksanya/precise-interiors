@@ -9,8 +9,14 @@ module.exports = {
         primary: '#133C55',   // Most used color (dark blue)
         secondary: '#386FA4', // Blue
         info: '#59A5D8',      // Light blue
-        accent: '#FFA500',    // Orange (accent)
+        accent: '#FFA500',
+        accentHover:'#FFBB00',   // Orange (accent)
         light: '#F5F5F5',     // Light grey
+        dark: '#9F9F9F',
+        lightDanger: '#f8d7da',
+        darkRed: '#721c24',
+        lightRed: '#f5c6cb',
+
       },
       boxShadow: {
         'blue-shadow': '0 4px 10px 0 rgba(56, 111, 164, 0.4)',

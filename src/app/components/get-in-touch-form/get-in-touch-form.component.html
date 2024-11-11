@@ -1,0 +1,127 @@
+<section>
+  <form
+    (ngSubmit)="onSubmit(contactForm)"
+    #contactForm="ngForm"
+    class="space-y-4">
+    <div class="form-group">
+      <label for="firstName" class="block text-gray-700"
+        >First name <span class="text-red-600">*</span></label
+      >
+      <input
+        type="text"
+        id="firstName"
+        [(ngModel)]="contactData.firstName"
+        name="firstName"
+        placeholder="John"
+        required
+        #firstName="ngModel"
+        minlength="1"
+        class="form-control input-style" />
+
+      @if (firstName.invalid && firstName.touched) {
+        <div class="alert alert-danger">Name is required</div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="lastName" class="block text-gray-700"
+        >Last name <span class="text-red-600">*</span></label
+      >
+      <input
+        type="text"
+        id="lastName"
+        [(ngModel)]="contactData.lastName"
+        name="lastName"
+        placeholder="Doe"
+        required
+        #lastName="ngModel"
+        minlength="1"
+        class="form-control input-style" />
+
+      @if (lastName.invalid && lastName.touched) {
+        <div class="alert alert-danger">Last name is required</div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="company" class="block text-gray-700"
+        >Company name (if applicable)</label
+      >
+      <input
+        type="text"
+        id="company"
+        [(ngModel)]="contactData.company"
+        name="company"
+        placeholder="Company Name"
+        class="form-control input-style" />
+    </div>
+
+    <div class="form-group">
+      <label for="position" class="block text-gray-700"
+        >Position (if applicable)</label
+      >
+      <input
+        type="text"
+        id="position"
+        [(ngModel)]="contactData.position"
+        name="position"
+        placeholder="Position"
+        class="form-control input-style" />
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="block text-gray-700"
+        >Email <span class="text-red-600">*</span></label
+      >
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="contactData.email"
+        name="email"
+        placeholder="john@gmail.com"
+        required
+        #email="ngModel"
+        class="form-control input-style" />
+
+      @if (email.invalid && email.touched) {
+        <div class="alert alert-danger">Email is required</div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="phone" class="block text-gray-700"
+        >Phone <span class="text-red-600">*</span></label
+      >
+      <input
+        type="tel"
+        id="phone"
+        [(ngModel)]="contactData.phone"
+        name="phone"
+        placeholder="+44 117 2345678"
+        required
+        #phone="ngModel"
+        class="form-control input-style"
+        ngModel />
+
+      @if (email.invalid && email.touched) {
+        <div class="alert alert-danger">Phone is required</div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="message" class="block text-gray-700">Message</label>
+      <textarea
+        id="message"
+        [(ngModel)]="contactData.message"
+        name="message"
+        placeholder="Type your message..."
+        class="form-control input-style h-32"
+        ngModel>
+      </textarea>
+    </div>
+
+    <button type="submit" [disabled]="!contactForm.form.valid" class="btn">
+      SUBMIT
+    </button>
+  </form>
+</section>
