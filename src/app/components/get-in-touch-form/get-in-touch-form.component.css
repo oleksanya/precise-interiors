@@ -1,0 +1,22 @@
+.input-style {
+  @apply w-full border border-dark rounded-lg p-2 focus:outline-none focus:border-accent;
+}
+.btn {
+  @apply w-full bg-accent hover:bg-accentHover text-primary font-semibold py-3  transition-colors;
+}
+
+.ng-invalid {
+  @apply border-red-500;
+}
+
+.ng-untouched {
+  @apply border-dark;
+}
+
+.alert {
+  @apply p-1 rounded-sm;
+}
+
+.alert-danger {
+  @apply bg-lightDanger text-darkRed border-solid border-2 border-lightRed text-xs;
+}
