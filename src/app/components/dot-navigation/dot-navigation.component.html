@@ -1,0 +1,24 @@
+<menu class="dot-nav">
+  @for (section of sections; track section.id) {
+    <li
+      class="dot"
+      [ngClass]="{
+        active: activeSection === section.id,
+        'hover-active': isHovered(section.id),
+      }"
+      (mouseenter)="onMouseEnter(section.id)"
+      (mouseleave)="onMouseLeave()"
+      (click)="scrollToSection(section.id)"
+      (keydown.enter)="scrollToSection(section.id)"
+      (keydown.space)="scrollToSection(section.id)"
+      tabindex="0"
+      role="button">
+      @if (isHovered(section.id)) {
+        <span
+          class="justify-center w-full text-center text-lg px-2 hidden lg:flex">
+          {{ section.label }}
+        </span>
+      }
+    </li>
+  }
+</menu>
