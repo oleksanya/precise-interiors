@@ -16,6 +16,7 @@ module.exports = {
         lightDanger: '#f8d7da',
         darkRed: '#721c24',
         lightRed: '#f5c6cb',
+        greyBlue: '#7A92A8'
 
       },
       boxShadow: {
