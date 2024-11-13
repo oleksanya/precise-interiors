@@ -1,0 +1,95 @@
+<footer class="bg-white h-max flex flex-col justify-between py-2">
+  <div
+    class="flex max-sm:flex-col lg:flex-row justify-between max-sm:h-3/5 h-2/5 lg:h-2/5 p-5">
+    <div
+      class="flex max-sm:flex-col lg:flex-row lg:basis-3/6 max-w-[40rem] justify-between max-sm:w-full">
+      <img
+        class="max-sm:mx-auto max-sm:my-0 pb-2 w-44 lg:w-[15rem] mr-5"
+        src="/logo.svg"
+        alt="logo" />
+
+      <div class="flex flex-col justify-evenly text-sm lg:text-lg">
+        <p class="flex items-center mb-1">
+          <mat-icon class="icon icon-container">mail</mat-icon>
+
+          <a class="text-nowrap" href="mailto:admin@precise-interiors.com"
+            >admin&#64;precise-interiors.com</a
+          >
+        </p>
+
+        <p class="flex items-center mb-1">
+          <mat-icon class="icon icon-container"> phone</mat-icon>
+
+          <a href="tel:+03301332585">03301332585</a>
+        </p>
+
+        <p class="flex items-center mb-1">
+          <span class="icon icon-container">
+            <img
+            class="w-6 h-6"
+            src="/linkedin-icon.svg"
+            alt="LinkedIn logo" 
+          />
+          </span>
+          <a
+            class="underline underline-offset-2 font-medium text-primary"
+            href="https://www.linkedin.com/in/volodymyr-kryvenko-35b9188b/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <p
+      class="text-primary italic font-medium mt-2 text-sm lg:text-lg text-center items-center justify-center flex basis-1/4 lg:basis-1/5">
+      57 Shipman Road
+      <br>Leicester | LE3 2YB
+    </p>
+  </div>
+
+  <div class="bg-secondary w-full lg:h-1/6 py-3">
+    <ul
+      class="w-full lg:px-0 lg:w-1/2 h-full max-sm:flex-wrap max-sm:h-max max-sm:px-1 items-center max-md:px-3 text-light font-semibold text-[1rem] mx-auto my-0 flex justify-evenly lg:justify-between max-sm:text-xs"
+    >
+      <li class="flex items-center h-full">
+        <a class="h-full mr-2 max-sm:w-max flex items-center hover-animation" href="#">
+          Privacy policy
+          <mat-icon>arrow_right_alt</mat-icon>
+        </a>
+      </li>
+  
+      <li class="flex items-center h-full">
+        <a class="h-full mr-2 max-sm:w-max flex items-center hover-animation" href="#">
+          Work with us
+          <mat-icon>arrow_right_alt</mat-icon>
+        </a>
+      </li>
+
+      <li class="flex items-center h-full">
+        <a class="h-full mr-2 max-sm:w-max flex items-center hover-animation" href="#">
+          Health and safety
+          <mat-icon>arrow_right_alt</mat-icon>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w-full h-max lg:h-1/6 flex items-center justify-center my-5">
+    <div
+      class="flex max-sm:justify-center px-2 justify-between max-sm:flex-wrap w-full lg:w-2/3 lg:px-0">
+      @for (image of certificates; track image.imgSrc) {
+        <img
+          class="w-max max-sm:max-w-24 h-11 md:h-15 lg:h-16"
+          [src]="image.imgSrc"
+          [alt]="image.imgAlt" />
+      }
+    </div>
+  </div>
+
+  <div class="flex justify-center max-sm:text-sm">
+    <p class="text-center">
+      &copy; 2024, Precise Interiors LLC Ltd. All rights reserved
+    </p>
+  </div>
+</footer>
