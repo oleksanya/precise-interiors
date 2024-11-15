@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'home-background': "url('/ceiling.png')",
+        'join-team-background': "url('/team_background.jpg')",
         'who-we-are-background': "url('/section_2-bg.jpg')",
         'custom-gradient': 'linear-gradient(90deg, #FFA500 0%, rgba(56, 111, 164, 0.7) 60%, #FFA500 100%)',
         'multi-step-gradient': 'linear-gradient(270deg, rgba(255, 255, 255, 0.3) 0%, #386FA4 50%, #133C55 100%)',
