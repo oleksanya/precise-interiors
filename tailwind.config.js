@@ -10,6 +10,7 @@ module.exports = {
         secondary: '#386FA4', // Blue
         info: '#59A5D8',      // Light blue
         accent: '#FFA500',
+        lightBlue: 'rgba(56, 111, 164, 0.13)', // light blue color
         accentHover:'#FFBB00',   // Orange (accent)
         light: '#F5F5F5',     // Light grey
         dark: '#9F9F9F',
