@@ -4,6 +4,6 @@ import { JoinTheTeamPageComponent } from './pages/join-the-team-page/join-the-te
 
 export const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'join-team', component: JoinTheTeamPageComponent },
 ];

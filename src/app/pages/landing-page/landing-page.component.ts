@@ -7,8 +7,8 @@ import { WhoWeHaveWorkedWithComponent } from '../../components/who-we-have-worke
 import { FeaturedProjectsComponent } from '../../components/featured-projects/featured-projects.component';
 import { OurLocationComponent } from '../../components/our-location/our-location.component';
 import { GetInTouchSectionComponent } from '../../components/get-in-touch-section/get-in-touch-section.component';
-import { FooterComponent } from "../../components/footer/footer.component";
-import { DotNavigationComponent } from "../../components/dot-navigation/dot-navigation.component";
+import { FooterComponent } from '../../components/footer/footer.component';
+import { DotNavigationComponent } from '../../components/dot-navigation/dot-navigation.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -23,8 +23,8 @@ import { DotNavigationComponent } from "../../components/dot-navigation/dot-navi
     OurLocationComponent,
     GetInTouchSectionComponent,
     FooterComponent,
-    DotNavigationComponent
-],
+    DotNavigationComponent,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
