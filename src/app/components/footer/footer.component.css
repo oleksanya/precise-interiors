@@ -7,5 +7,5 @@
 }
 
 .hover-animation {
-  @apply transition-all duration-300 ease-in-out hover:text-accent
+  @apply transition-all duration-300 ease-in-out hover:text-accent;
 }

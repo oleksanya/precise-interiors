@@ -1,0 +1,152 @@
+<section
+  class="flex flex-col items-center lg:flex-row justify-between border-t-2 border-lightBlue bg-light pb-4">
+  <div
+    class="left-side lg:basis-[45%] h-48 lg:min-h-screen w-full bg-cover bg-center bg-join-team-background">
+    <div class="w-full h-full bg-primary bg-opacity-40"></div>
+  </div>
+
+  <div
+    class="right-side-form w-5/6 md:w-2/3 lg:w-3/5 h-full lg:basis-1/2 lg:pr-16 flex flex-col">
+    <div class="pt-5 py-8">
+      <h2
+        class="text-2xl text-center lg:text-4xl font-extrabold text-primary mb-4">
+        JOIN THE TEAM
+      </h2>
+
+      <p class="text-primary text-sm lg:text-base text-center">
+        Looking to build your career in the construction industry? Join one of
+        the fastest-growing companies in the Leicester, specializing in
+        innovative construction solutions. If you're ready to be part of a
+        dynamic and expanding team, express your interest below!
+      </p>
+    </div>
+
+    <form
+      (ngSubmit)="onSubmit(applicationForm)"
+      #applicationForm="ngForm"
+      class="space-y-4">
+      <div class="form-group">
+        <label for="firstName" class="block text-primary"
+          >First name <span class="text-red-600">*</span></label
+        >
+        <input
+          type="text"
+          id="firstName"
+          [(ngModel)]="applicationContactData.firstName"
+          name="firstName"
+          placeholder="John"
+          required
+          #firstName="ngModel"
+          minlength="1"
+          class="form-control input-style" />
+
+        @if (firstName.invalid && firstName.touched) {
+          <div class="alert alert-danger">Name is required</div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="lastName" class="block text-primary"
+          >Last name <span class="text-red-600">*</span></label
+        >
+        <input
+          type="text"
+          id="lastName"
+          [(ngModel)]="applicationContactData.lastName"
+          name="lastName"
+          placeholder="Doe"
+          required
+          #lastName="ngModel"
+          minlength="1"
+          class="form-control input-style" />
+
+        @if (lastName.invalid && lastName.touched) {
+          <div class="alert alert-danger">Last name is required</div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="block text-primary"
+          >Email <span class="text-red-600">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          [(ngModel)]="applicationContactData.email"
+          name="email"
+          placeholder="john@gmail.com"
+          required
+          #email="ngModel"
+          class="form-control input-style" />
+
+        @if (email.invalid && email.touched) {
+          <div class="alert alert-danger">Email is required</div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="phone" class="block text-primary"
+          >Phone <span class="text-red-600">*</span></label
+        >
+        <input
+          type="tel"
+          id="phone"
+          [(ngModel)]="applicationContactData.phone"
+          name="phone"
+          placeholder="+44 117 2345678"
+          required
+          #phone="ngModel"
+          class="form-control input-style"
+          ngModel />
+
+        @if (email.invalid && email.touched) {
+          <div class="alert alert-danger">Phone is required</div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="jobMessage" class="block text-primary"
+          >Please let us know about your experience, expertise
+          <span class="text-red-600">*</span></label
+        >
+        <textarea
+          id="jobMessage"
+          required
+          #jobMessage="ngModel"
+          [(ngModel)]="applicationContactData.jobMessage"
+          name="message"
+          placeholder="Your message here"
+          class="form-control input-style h-20"
+          ngModel>
+        </textarea>
+      </div>
+
+      <!-- <div class="mb-6">
+      <label for="cv" class="block text-primary mb-2">Upload your CV</label>
+      <input
+        type="file"
+
+        id="cv"
+        name="cv"
+        class="form-control file-input-style "
+        (change)="onFileChange($event)"
+      />
+      <button
+        type="button"
+        class="w-full bg-yellow-500 text-white py-2 px-4 rounded-lg font-medium text-center"
+      >
+        + Upload File
+      </button>
+    </div>
+  </div> -->
+      <button
+        type="submit"
+        [disabled]="!applicationForm.form.valid"
+        class="btn">
+        SUBMIT
+      </button>
+    </form>
+  </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,6 +1,8 @@
 <header class="flex p-4 justify-between bg-light h-[5.5rem]">
   <div class="logo max-lg:basis-[50%] lg:basis-[20%] min-w-[12rem]">
-    <img src="/logo.svg" alt="Precise Interiors Logo" class="h-12" />
+    <a routerLink="/" aria-label="Go to Home">
+      <img src="/logo.svg" alt="Precise Interiors Logo" class="h-12" />
+    </a>
   </div>
 
   <!-- Mobile Menu Button (Hamburger) -->
@@ -19,7 +21,7 @@
     class="hidden lg:flex items-center h-full basis-[60%] justify-center">
     <ul class="flex justify-between h-full items-center">
       <li class="nav-item">
-        <a aria-label="Home section" href="#" class="nav-link">Home</a>
+        <a aria-label="Home section" routerLink="/" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
         <a aria-label="Who we are section" href="#" class="nav-link"
@@ -27,7 +29,12 @@
         >
       </li>
       <li class="nav-item">
-        <a aria-label="Projects section" href="#" class="nav-link">Projects</a>
+        <a
+          aria-label="Projects section"
+          routerLink="/our-projects"
+          class="nav-link"
+          >Projects</a
+        >
       </li>
     </ul>
   </nav>
@@ -35,7 +42,11 @@
   <nav class="hidden lg:flex">
     <ul class="flex basis-[20%] [&>*]:m-3">
       <li class="nav-item">
-        <a aria-label="Join the team page" href="#" class="nav-link"
+        <a
+          aria-label="Join the team page"
+          routerLink="/join-team"
+          routerLinkActive="active"
+          class="nav-link"
           >Join the team</a
         >
       </li>
@@ -52,7 +63,7 @@
 
   @if (isMobileMenuOpen) {
     <nav
-      class="fixed bottom-0 top-[5.6rem] left-0 w-full max-w-[30rem] bg-light p-8 z-20 shadow-lg lg:hidden">
+      class="fixed bottom-0 top-[5.3rem] left-0 w-full max-w-[30rem] bg-light p-8 z-20 shadow-lg lg:hidden">
       <button
         aria-label="Close Mobile Menu"
         class="text-gray-800 text-xl mb-4"
@@ -61,7 +72,10 @@
       </button>
       <ul class="space-y-4 h-[25.625rem] flex flex-col justify-between">
         <li class="mobile-nav-item">
-          <a aria-label="Home section mobile" href="#" class="mobile-nav-link">
+          <a
+            aria-label="Home section mobile"
+            routerLink="/home"
+            class="mobile-nav-link">
             Home
           </a>
         </li>
@@ -78,7 +92,7 @@
         <li class="mobile-nav-item">
           <a
             aria-label="Projects section mobile"
-            href="#"
+            routerLink="/our-projects"
             class="mobile-nav-link">
             Projects
           </a>
@@ -87,7 +101,8 @@
         <li class="mobile-nav-item">
           <a
             aria-label="Join the team section mobile"
-            href="#"
+            routerLink="/join-team"
+            routerLinkActive="active"
             class="mobile-nav-link">
             Join the team
           </a>
