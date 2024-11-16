@@ -1,5 +1,9 @@
 .nav-link {
-  @apply text-[1.2rem] text-gray-800 hover:text-accent active:font-medium transition-colors;
+  @apply text-[1.2rem] text-gray-800 hover:text-accent transition-colors;
+}
+
+.nav-link.active {
+  @apply text-accent font-medium underline underline-offset-[2.3rem] decoration-secondary;
 }
 
 .nav-item {
@@ -16,6 +20,11 @@
 .mobile-nav-link {
   @apply text-gray-800 text-xl font-normal uppercase;
 }
+
+.mobile-nav-link.active {
+  @apply text-accent font-medium;
+}
+
 .mobile-nav-item {
   @apply text-center;
 }
