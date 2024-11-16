@@ -3,5 +3,5 @@ export interface JobApplication extends Record<string, unknown> {
   lastName: string;
   email: string;
   phone: string;
-  message: string;
+  jobMessage: string;
 }
