@@ -8,10 +8,10 @@ import { JobApplication } from '../interfaces/job-application';
 })
 export class ContactService {
   private PUBLIC_KEY = 't-tR-zJp4NsNumJ6X';
-  private TEMPLATE_ID = 'template_xblk3bj';//contact-form
+  private TEMPLATE_ID = 'template_xblk3bj'; //contact-form
   private SERVICE_ID = 'service_4be0y32';
 
-  private TEMPLATE_ID_Job = 'template_550ingz';//job-form
+  private TEMPLATE_ID_Job = 'template_550ingz'; //job-form
 
   sendEmail(templateParams: GetInTouchForm): Promise<EmailJSResponseStatus> {
     return emailjs.send(
@@ -22,12 +22,14 @@ export class ContactService {
     );
   }
 
-  sendEmailJobApplication(templateParams: JobApplication ): Promise<EmailJSResponseStatus> {
+  sendEmailJobApplication(
+    templateParams: JobApplication
+  ): Promise<EmailJSResponseStatus> {
     return emailjs.send(
       this.SERVICE_ID,
       this.TEMPLATE_ID_Job,
       templateParams,
       this.PUBLIC_KEY
-    )
+    );
   }
 }
