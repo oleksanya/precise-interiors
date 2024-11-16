@@ -1,40 +1,40 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { FooterComponent } from "../../components/footer/footer.component";
+import { FooterComponent } from '../../components/footer/footer.component';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-join-the-team-page',
   standalone: true,
   imports: [FormsModule, FooterComponent],
   templateUrl: './join-the-team-page.component.html',
-  styleUrl: './join-the-team-page.component.css'
+  styleUrl: './join-the-team-page.component.css',
 })
 export class JoinTheTeamPageComponent {
+  contactService = inject(ContactService);
+
   applicationContactData = {
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
-    message: '',
+    jobMessage: '',
   };
 
   onSubmit(form: NgForm): void {
-    if (form.valid) {
-      const templateParams = {
-        firstName: this.applicationContactData.firstName,
-        lastName: this.applicationContactData.lastName,
-        email: this.applicationContactData.email,
-        phone: this.applicationContactData.phone,
-        message: this.applicationContactData.message,
-      };
+    const templateParams = {
+      firstName: this.applicationContactData.firstName,
+      lastName: this.applicationContactData.lastName,
+      email: this.applicationContactData.email,
+      phone: this.applicationContactData.phone,
+      jobMessage: this.applicationContactData.jobMessage,
+    };
 
-      console.log('Form Submitted!', templateParams);
-      alert('Your application has been submitted!');
-      form.reset();
-    } else {
-      alert('Please fill in all required fields.');
-    }
+    this.contactService.sendEmailJobApplication(templateParams);
+
+    console.log('Form Submitted!', templateParams);
+    alert('Your application has been submitted!');
+    form.reset();
   }
-
 }
