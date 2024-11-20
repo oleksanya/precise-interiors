@@ -1,1 +1,44 @@
-<p>project-gallery works!</p>
+<div class="columns-2 sm:columns-3 lg:columns-4 gap-4 p-5 bg-light">
+  @if (isOpenDialog) {
+    <div
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      (click)="closeDialog()"
+      (keydown.escape)="closeDialog()"
+      tabindex="0"
+      role="dialog"
+      aria-modal="true">
+      <div
+        class="bg-light rounded-lg shadow-lg relative max-w-full max-h-full h-[90vh] justify-center lg:p-8 md:p-7 px-0 flex flex-col items-center">
+        <button
+          class="absolute top-3 right-3 text-secondary hover:text-primary focus:outline-none text-xl"
+          (click)="closeDialog()"
+          role="button"
+          (keydown.escape)="closeDialog()"
+          aria-label="Close dialog">
+          <mat-icon>close</mat-icon>
+        </button>
+
+        <img
+          [src]="selectedImage"
+          alt="Selected Project Image"
+          class="h-auto w-auto max-h-full max-w-full" />
+      </div>
+    </div>
+  }
+
+  @for (image of projectImages; track $index) {
+    <figure class="bg-primary rounded-lg">
+      <img
+        [src]="image"
+        loading="lazy"
+        alt="Project Image"
+        class="project-img mb-4 w-full rounded-lg shadow-md opacity-100 transition duration-300 ease-in-out"
+        (click)="openDialog(image)"
+        (keydown.enter)="openDialog(image)"
+        (keydown.space)="openDialog(image)"
+        tabindex="0" />
+    </figure>
+    <div
+      class="w-full object-cover rounded-md shadow-md hover:bg-[rgba(68,114,156,0.51)] absolute z-10 top-0"></div>
+  }
+</div>
