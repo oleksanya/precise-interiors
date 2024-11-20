@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ProjectHeaderComponent } from "../../components/project-header/project-header.component";
 import { ProjectGalleryComponent } from "../../components/project-gallery/project-gallery.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-past-project-page',
   standalone: true,
-  imports: [ProjectHeaderComponent, ProjectGalleryComponent],
+  imports: [ProjectGalleryComponent, FooterComponent],
   templateUrl: './past-project-page.component.html',
   styleUrl: './past-project-page.component.css'
 })
