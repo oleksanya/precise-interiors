@@ -9,6 +9,7 @@ import { OurLocationComponent } from '../../components/our-location/our-location
 import { GetInTouchSectionComponent } from '../../components/get-in-touch-section/get-in-touch-section.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { DotNavigationComponent } from '../../components/dot-navigation/dot-navigation.component';
+import { HeaderComponent } from "../../components/header/header.component";
 
 @Component({
   selector: 'app-landing-page',
@@ -24,7 +25,8 @@ import { DotNavigationComponent } from '../../components/dot-navigation/dot-navi
     GetInTouchSectionComponent,
     FooterComponent,
     DotNavigationComponent,
-  ],
+    HeaderComponent
+],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })

@@ -3,11 +3,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { ContactService } from '../../services/contact.service';
+import { HeaderComponent } from "../../components/header/header.component";
 
 @Component({
   selector: 'app-join-the-team-page',
   standalone: true,
-  imports: [FormsModule, FooterComponent],
+  imports: [FormsModule, FooterComponent, HeaderComponent],
   templateUrl: './join-the-team-page.component.html',
   styleUrl: './join-the-team-page.component.css',
 })
@@ -33,7 +34,6 @@ export class JoinTheTeamPageComponent {
 
     this.contactService.sendEmailJobApplication(templateParams);
 
-    console.log('Form Submitted!', templateParams);
     alert('Your application has been submitted!');
     form.reset();
   }
