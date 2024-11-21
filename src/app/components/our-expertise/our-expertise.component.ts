@@ -7,11 +7,12 @@ import {
 } from '@angular/core';
 import { IntersectionObserverDirective } from '../../directives/intersection-observer.directive';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-our-expertise',
   standalone: true,
-  imports: [IntersectionObserverDirective, MatIconModule],
+  imports: [IntersectionObserverDirective, MatIconModule, RouterModule],
   templateUrl: './our-expertise.component.html',
   styleUrl: './our-expertise.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
