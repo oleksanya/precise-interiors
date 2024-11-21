@@ -36,7 +36,6 @@ export class IntersectionObserverDirective implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log('Observer disconnected');
     if (this.observer) {
       this.observer.disconnect();
     }
