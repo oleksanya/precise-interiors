@@ -28,8 +28,6 @@ export class GetInTouchFormComponent {
   successMessage = '';
 
   onSubmit(form: NgForm) {
-    console.log('Your form data:', form.value);
-
     //Is loading for future loading spin animation while form result is sending on email
     this.isLoading = true;
     this.errorMessage = '';
@@ -50,7 +48,7 @@ export class GetInTouchFormComponent {
       .then(response => {
         this.isLoading = false;
         this.successMessage = 'Message sent successfully!';
-        console.log('SUCCESS!', response.status, response.text);
+        // console.log('SUCCESS!', response.status, response.text);
         alert(this.successMessage);
       })
       .catch(error => {

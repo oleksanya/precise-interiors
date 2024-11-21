@@ -6,6 +6,7 @@ import { PastProjectPageComponent } from './pages/past-project-page/past-project
 export const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'who-we-are', component: LandingPageComponent },
   { path: 'join-team', component: JoinTheTeamPageComponent },
   { path: 'our-projects', component: PastProjectPageComponent },
 ];
