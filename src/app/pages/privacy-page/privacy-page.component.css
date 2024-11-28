@@ -1,0 +1,11 @@
+h2 { 
+  @apply text-info
+}
+
+p { 
+  @apply text-primary
+}
+
+ul {
+  @apply m-[0.5rem_0_1rem_1.5rem] text-primary
+}
