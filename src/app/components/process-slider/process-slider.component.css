@@ -1,0 +1,10 @@
+:host {
+  --swiper-navigation-color: white;
+  --swiper-theme-color: white;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
+}
+
+.swiper-slide img {
+  @apply w-full h-full object-cover lg:object-cover aspect-square lg:aspect-square
+}
