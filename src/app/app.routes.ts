@@ -4,6 +4,7 @@ import { JoinTheTeamPageComponent } from './pages/join-the-team-page/join-the-te
 import { PastProjectPageComponent } from './pages/past-project-page/past-project-page.component';
 import { WorkingProcessPageComponent } from './pages/working-process-page/working-process-page.component';
 import { HealthComponent } from './pages/health/health.component';
+import { PrivacyPageComponent } from './pages/privacy-page/privacy-page.component';
 
 export const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'join-team', component: JoinTheTeamPageComponent },
   { path: 'our-projects', component: PastProjectPageComponent },
   { path: 'working-process', component: WorkingProcessPageComponent },
-  { path: 'health', component: HealthComponent }
+  { path: 'health', component: HealthComponent },
+  { path: 'privacy-policy', component: PrivacyPageComponent }
 ];
