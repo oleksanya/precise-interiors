@@ -24,7 +24,12 @@
         <a aria-label="Home section" routerLink="/" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a aria-label="Who we are section" href="#" class="nav-link"
+        <a aria-label="Who we are section"
+        (click)="scrollToSection('who-we-are')"
+        (keydown.enter)="scrollToSection('who-we-are')"
+        (keydown.space)="scrollToSection('who-we-are')"
+        tabindex="0"
+        class="nav-link cursor-pointer"
           >Who we are</a
         >
       </li>
@@ -54,8 +59,11 @@
       <li class="nav-item">
         <a
           aria-label="Contact us form"
-          href="#"
-          class="nav-link-contact bg-secondary hover:bg-accent rounded-lg px-4 py-2 whitespace-nowrap flexitems-center">
+          (click)="scrollToSection('get-in-touch')"
+          (keydown.enter)="scrollToSection('get-in-touch')"
+          (keydown.space)="scrollToSection('get-in-touch')"
+          tabindex="0"
+          class="nav-link-contact cursor-pointer bg-secondary hover:bg-accent rounded-lg px-4 py-2 whitespace-nowrap flexitems-center">
           Contact us
         </a>
       </li>
@@ -67,8 +75,7 @@
       class="fixed bottom-0 top-[5.3rem] left-0 w-full max-w-[30rem] bg-light p-8 z-20 shadow-lg lg:hidden">
       <button
         aria-label="Close Mobile Menu"
-        class="text-gray-800 text-xl mb-4"
-        (click)="closeMobileMenu()">
+        class="text-gray-800 text-xl mb-4">
         <i class="fas fa-times"></i>
       </button>
       <ul class="space-y-4 h-[25.625rem] flex flex-col justify-between">
@@ -84,7 +91,10 @@
         <li class="mobile-nav-item">
           <a
             aria-label="Who we are section mobile"
-            href="#"
+            (click)="scrollToSection('who-we-are')"
+            (keydown.enter)="scrollToSection('who-we-are')"
+            (keydown.space)="scrollToSection('who-we-are')"
+            tabindex="0"
             class="mobile-nav-link">
             Who we are
           </a>
@@ -112,7 +122,10 @@
         <li class="mobile-nav-item">
           <a
             aria-label="Contact us section mobile"
-            href="#"
+            (click)="scrollToSection('get-in-touch')"
+            (keydown.enter)="scrollToSection('get-in-touch')"
+            (keydown.space)="scrollToSection('get-in-touch')"
+            tabindex="0"
             class="mobile-nav-link">
             Contact us
           </a>
