@@ -5,27 +5,27 @@
       class="flex max-sm:flex-col lg:flex-row lg:basis-3/6 max-w-[40rem] justify-between max-sm:w-full">
       <img
         class="max-sm:mx-auto max-sm:my-0 pb-2 w-44 lg:w-[15rem] mr-5"
-        src="/logo.svg"
+        src="./logo.svg"
         alt="logo" />
 
       <div class="flex flex-col justify-evenly text-sm lg:text-lg">
         <p class="flex items-center mb-1">
           <mat-icon class="icon icon-container">mail</mat-icon>
 
-          <a class="text-nowrap" href="mailto:admin@precise-interiors.com"
-            >admin&#64;precise-interiors.com</a
+          <a class="text-nowrap" href="mailto:info@precise-interiors.com"
+            >info&#64;precise-interiors.com</a
           >
         </p>
 
         <p class="flex items-center mb-1">
           <mat-icon class="icon icon-container"> phone</mat-icon>
 
-          <a href="tel:+03301332585">03301332585</a>
+          <a href="tel:+4403301332585">+4403301332585</a>
         </p>
 
         <p class="flex items-center mb-1">
           <span class="icon icon-container">
-            <img class="w-6 h-6" src="/linkedin-icon.svg" alt="LinkedIn logo" />
+            <img class="w-6 h-6" src="./linkedin-icon.svg" alt="LinkedIn logo" />
           </span>
           <a
             class="underline underline-offset-2 font-medium text-primary"
@@ -50,7 +50,7 @@
       <li class="flex items-center h-full">
         <a
           class="h-full mr-2 max-sm:w-max flex items-center hover-animation"
-          href="/privacy-policy">
+          href="/precise-interiors/privacy-policy">
           Privacy policy
           <mat-icon>arrow_right_alt</mat-icon>
         </a>
@@ -59,7 +59,7 @@
       <li class="flex items-center h-full">
         <a
           class="h-full mr-2 max-sm:w-max flex items-center hover-animation"
-          href="/join-team">
+          href="/precise-interiors/join-team">
           Work with us
           <mat-icon>arrow_right_alt</mat-icon>
         </a>
@@ -68,7 +68,7 @@
       <li class="flex items-center h-full">
         <a
           class="h-full mr-2 max-sm:w-max flex items-center hover-animation"
-          href="/health">
+          href="/precise-interiors/health">
           Health and safety
           <mat-icon>arrow_right_alt</mat-icon>
         </a>
@@ -81,7 +81,7 @@
       class="flex max-sm:justify-center px-2 justify-between max-sm:flex-wrap w-full lg:w-2/3 lg:px-0">
       @for (image of certificates; track image.imgSrc) {
         <img
-          class="w-max max-sm:max-w-24 h-11 md:h-15 lg:h-16"
+          class="w-max max-sm:max-w-24 h-11 object-contain md:h-15 lg:h-16"
           [src]="image.imgSrc"
           [alt]="image.imgAlt" />
       }

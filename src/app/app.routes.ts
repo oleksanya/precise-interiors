@@ -2,9 +2,9 @@ import { Routes } from '@angular/router';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { JoinTheTeamPageComponent } from './pages/join-the-team-page/join-the-team-page.component';
 import { PastProjectPageComponent } from './pages/past-project-page/past-project-page.component';
-import { WorkingProcessPageComponent } from './pages/working-process-page/working-process-page.component';
 import { HealthComponent } from './pages/health/health.component';
 import { PrivacyPageComponent } from './pages/privacy-page/privacy-page.component';
+import { WorkingProcessPageComponent } from './pages/working-process-page/working-process-page.component';
 
 export const routes: Routes = [
   { path: 'home', component: LandingPageComponent },

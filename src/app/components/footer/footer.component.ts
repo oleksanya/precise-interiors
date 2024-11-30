@@ -12,23 +12,23 @@ import { RouterModule } from '@angular/router';
 export class FooterComponent {
   certificates = [
     {
-      imgSrc: '/certificates/1.jpg',
+      imgSrc: './certificates/1.jpg',
       imgAlt: 'certificate image',
     },
     {
-      imgSrc: '/certificates/2.jpg',
+      imgSrc: './certificates/2.jpg',
       imgAlt: 'certificate image',
     },
     {
-      imgSrc: '/certificates/3.jpg',
+      imgSrc: './certificates/3.jpg',
       imgAlt: 'certificate image',
     },
     {
-      imgSrc: '/certificates/4.jpg',
+      imgSrc: './certificates/4.jpg',
       imgAlt: 'certificate image',
     },
     {
-      imgSrc: '/certificates/5.jpg',
+      imgSrc: './certificates/5.jpg',
       imgAlt: 'certificate image',
     },
   ];

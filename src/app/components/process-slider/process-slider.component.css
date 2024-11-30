@@ -8,3 +8,7 @@
 .swiper-slide img {
   @apply w-full h-full object-cover lg:object-cover aspect-square lg:aspect-square
 }
+
+figure:hover img {
+  @apply opacity-50;
+}

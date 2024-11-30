@@ -38,18 +38,18 @@
       >
     @for(slide of slider.slides; track slide.id) {
       <swiper-slide class="swiper-slide">
-        <div class="bg-primary flex justify-center items-center w-full h-max">
+        <figure class="bg-primary flex justify-center items-center w-full h-max">
           <img
-          loading="lazy" 
-          class="w-full h-full object-contain"
-          [src]="slide.image" 
-          [alt]="slide.alt"
-          (click)="openDialog(slide.image)"
-          (keydown.enter)="openDialog(slide.image)"
-          (keydown.space)="openDialog(slide.image)"
-          tabindex="0"
+            loading="lazy" 
+            class="w-full h-full object-contain project-img opacity-100"
+            [src]="slide.image" 
+            [alt]="slide.alt"
+            (click)="openDialog(slide.image)"
+            (keydown.enter)="openDialog(slide.image)"
+            (keydown.space)="openDialog(slide.image)"
+            tabindex="0"
           >
-        </div>
+        </figure>
       </swiper-slide>
     }
       </swiper-container>
@@ -61,23 +61,23 @@
       <p class="text-light italic text-sm font-medium max-sm:text-justify text-center px-3 pb-3 lg:px-0 lg:pb-6">{{ slider.description }} </p>
 
       <swiper-container 
-      navigation="true"
-      space-between="15"
-      slides-per-view="1"
-      pagination-clickable="true"
+        navigation="true"
+        space-between="15"
+        slides-per-view="1"
+        pagination-clickable="true"
       >
     @for(slide of slider.slides; track slide.id) {
       <swiper-slide class="flex items-center swiper-slide">
         <div class="bg-primary flex justify-center items-center w-full ">
           <img
-          loading="lazy" 
-          class=""
-          [src]="slide.image" 
-          [alt]="slide.alt"
-          (click)="openDialog(slide.image)"
-          (keydown.enter)="openDialog(slide.image)"
-          (keydown.space)="openDialog(slide.image)"
-          tabindex="0">
+            loading="lazy" 
+            class=""
+            [src]="slide.image" 
+            [alt]="slide.alt"
+            (click)="openDialog(slide.image)"
+            (keydown.enter)="openDialog(slide.image)"
+            (keydown.space)="openDialog(slide.image)"
+            tabindex="0">
         </div>
       </swiper-slide>
     }

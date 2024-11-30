@@ -1,4 +1,4 @@
-<div class="columns-2 sm:columns-3 lg:columns-4 gap-4 p-5 bg-light">
+<div class="columns-2 sm:columns-3 lg:columns-4 gap-4 p-4 bg-light">
   @if (isOpenDialog) {
     <div
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
@@ -27,12 +27,12 @@
   }
 
   @for (image of projectImages; track $index) {
-    <figure class="bg-primary rounded-lg">
+    <figure class="bg-primary rounded-lg [&:not(:first-child)]:mt-4">
       <img
         [src]="image"
         loading="lazy"
         alt="Project Image"
-        class="project-img mb-4 w-full rounded-lg shadow-md opacity-100 transition duration-300 ease-in-out"
+        class="w-full rounded-lg shadow-md opacity-100"
         (click)="openDialog(image)"
         (keydown.enter)="openDialog(image)"
         (keydown.space)="openDialog(image)"

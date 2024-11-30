@@ -58,49 +58,49 @@ export class OurExpertiseComponent implements AfterViewInit {
 
   expertiseItems = [
     {
-      iconSrc: '/section-icons/icon_1.png',
+      iconSrc: './section-icons/icon_1.png',
       iconAlt: 'Internal partitioning icon',
       title: 'Internal Partitioning',
       description:
         'Efficient space division for enhanced privacy and functionality in both commercial and residential properties.',
     },
     {
-      iconSrc: '/section-icons/icon_2.png',
+      iconSrc: './section-icons/icon_2.png',
       iconAlt: 'SFS (steel framing system) icon',
       title: 'SFS (Steel Framing System)',
       description:
         'Lightweight, durable steel framing structures, ideal for fast, cost-effective, and versatile construction.',
     },
     {
-      iconSrc: '/section-icons/icon_3.png',
+      iconSrc: './section-icons/icon_3.png',
       iconAlt: 'Refurbishment icon',
       title: 'Refurbishment',
       description:
         'Revitalizing and upgrading existing spaces with modern design and improved functionality.',
     },
     {
-      iconSrc: '/section-icons/icon_4.png',
+      iconSrc: './section-icons/icon_4.png',
       iconAlt: 'Retrofitting icon',
       title: 'Retrofitting',
       description:
         'Upgrading existing buildings to meet modern standards for energy efficiency, safety, and functionality.',
     },
     {
-      iconSrc: '/section-icons/icon_5.png',
+      iconSrc: './section-icons/icon_5.png',
       iconAlt: 'Suspended ceilings icon',
       title: 'Suspended Ceilings',
       description:
         'Stylish and practical ceiling solutions for improved acoustics, aesthetics, and easy maintenance.',
     },
     {
-      iconSrc: '/section-icons/icon_6.png',
+      iconSrc: './section-icons/icon_6.png',
       iconAlt: 'External cladding icon',
       title: 'External Cladding',
       description:
         'Protective and aesthetically pleasing external facades that enhance durability and thermal insulation.',
     },
     {
-      iconSrc: '/section-icons/icon_7.png',
+      iconSrc: './section-icons/icon_7.png',
       iconAlt: 'Commercial and residential new build icon',
       title: 'Commercial and Residential New Build',
       description:
