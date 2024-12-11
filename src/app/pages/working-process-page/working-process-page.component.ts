@@ -18,8 +18,8 @@ export class WorkingProcessPageComponent {
   sliderData: SliderContent[] =
   [ 
     {
-      title: "Internal Partitioning",
-      description: "Internal and ceiling package (labour supply only) for our client Ace Partitions and Ceilings Ltd, University of Gloucester",
+      title: "Internal Partitioning and Ceilings",
+      description: "Internal and ceiling package (labour supply only)",
       slides: [
         { id: 1, image: "./working-process/INTERNAL AND CEILINGS/internal_1.jpg", alt: "Internal Partitioning Slide 1" },
         { id: 2, image: "./working-process/INTERNAL AND CEILINGS/internal_2.jpg", alt: "Internal Partitioning Slide 2" },

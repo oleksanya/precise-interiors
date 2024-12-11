@@ -77,10 +77,10 @@
 
   <div class="w-full h-max lg:h-1/6 flex items-center justify-center my-5">
     <div
-      class="flex max-sm:justify-center px-2 justify-between max-sm:flex-wrap w-full lg:w-2/3 lg:px-0">
+      class="flex max-sm:justify-center px-2 justify-between max-sm:flex-wrap w-full lg:w-4/5 lg:px-0">
       @for (image of certificates; track image.imgSrc) {
         <img
-          class="w-max max-sm:max-w-24 h-12 object-contain md:h-14 lg:h-16"
+          class="max-sm:max-w-24 h-12 object-contain md:h-14 lg:h-16"
           [src]="image.imgSrc"
           [alt]="image.imgAlt" />
       }
