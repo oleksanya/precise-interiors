@@ -62,7 +62,7 @@ export class OurExpertiseComponent implements AfterViewInit {
       iconAlt: 'Internal partitioning icon',
       title: 'Internal Partitioning',
       description:
-        'Efficient space division for enhanced privacy and functionality in both commercial and residential properties.',
+        'Smart space division for enhanced privacy and functionality in both commercial and residential properties.',
     },
     {
       iconSrc: './section-icons/icon_2.png',
@@ -76,7 +76,7 @@ export class OurExpertiseComponent implements AfterViewInit {
       iconAlt: 'Refurbishment icon',
       title: 'Refurbishment',
       description:
-        'Revitalizing and upgrading existing spaces with modern design and improved functionality.',
+        'Transforming and enhancing existing spaces with contemporary designs and upgraded functionality.',
     },
     {
       iconSrc: './section-icons/icon_4.png',
