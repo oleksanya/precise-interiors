@@ -17,7 +17,7 @@ export class DotNavigationComponent {
     { id: 'who-we-are', label: 'Who We Are' },
     { id: 'our-expertise', label: 'Our Expertise' },
     // { id: 'slider', label: 'Project photos' },
-    { id: 'slider', label: 'Who We Worked With' },
+    { id: 'slider', label: 'Our Partners' },
     // { id: 'featured-projects', label: 'Featured Projects' },
     { id: 'our-location', label: 'Our Location' },
     { id: 'get-in-touch', label: 'Get In Touch' },
