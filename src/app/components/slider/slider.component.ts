@@ -15,6 +15,7 @@ export class SliderComponent implements OnInit {
     { imgSrc: 'slider-photos/portrait/3.jpg' },
     { imgSrc: 'slider-photos/portrait/4.jpg' },
     { imgSrc: 'slider-photos/portrait/5.jpg' },
+    { imgSrc: 'slider-photos/portrait/6.jpg' },
   ];
 
   slides_lg = [
@@ -24,6 +25,8 @@ export class SliderComponent implements OnInit {
     { imgSrc: 'slider-photos/landscapes/4.jpg' },
     { imgSrc: 'slider-photos/landscapes/5.jpg' },
     { imgSrc: 'slider-photos/landscapes/6.jpg' },
+    { imgSrc: 'slider-photos/landscapes/7.jpg' },
+    { imgSrc: 'slider-photos/landscapes/8.jpg' },
   ];
 
   combinedSlides: { imgSrc: string; size: string }[] = [];
