@@ -36,7 +36,7 @@
       pagination-clickable="true"
       slides-per-view="3"
       >
-    @for(slide of slider.slides; track slide.id) {
+    @for(slide of slider.slides; track slide.image) {
       <swiper-slide class="swiper-slide">
         <figure class="bg-primary flex justify-center items-center w-full h-max">
           <img
@@ -65,7 +65,7 @@
         slides-per-view="1"
         pagination-clickable="true"
       >
-    @for(slide of slider.slides; track slide.id) {
+    @for(slide of slider.slides; track slide.image) {
       <swiper-slide class="flex items-center swiper-slide">
         <div class="bg-primary flex justify-center items-center w-full ">
           <img

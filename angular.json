@@ -13,10 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/precise-interiors/",
             "outputPath": "dist/precise-interiors",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "ssr": false,
             "polyfills": [
               "zone.js"
             ],

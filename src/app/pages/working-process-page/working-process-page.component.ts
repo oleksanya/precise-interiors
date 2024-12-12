@@ -6,7 +6,6 @@ import { SliderContent } from '../../interfaces/slider-content';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 
-
 @Component({
   selector: 'app-working-process-page',
   standalone: true,
@@ -15,6 +14,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './working-process-page.component.css'
 })
 export class WorkingProcessPageComponent {
+
   sliderData: SliderContent[] =
   [ 
     {

@@ -50,6 +50,7 @@ export class GetInTouchFormComponent {
         this.successMessage = 'Message sent successfully!';
         // console.log('SUCCESS!', response.status, response.text);
         alert(this.successMessage);
+        form.reset();
       })
       .catch(error => {
         this.isLoading = false;
