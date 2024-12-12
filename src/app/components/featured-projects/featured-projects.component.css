@@ -1,0 +1,13 @@
+.video-section {
+  background-image: url('../../../../public/background_video.jpg');
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
